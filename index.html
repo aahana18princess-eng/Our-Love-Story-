@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.3">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px Menlo; color: #000000}
+    span.s1 {font: 12.0px Helvetica; color: #000000}
+    span.s2 {font: 10.8px 'Apple Color Emoji'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-</p>
+<p class="p1">scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Aahana &amp; Rajyavradhan&lt;/title&gt;</p>
+<p class="p1">&lt;!-- Fonts --&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?</p>
+<p class="p1">family=Great+Vibes&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?</p>
+<p class="p1">family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">/* General Styles */</p>
+<p class="p1">body {</p>
+<p class="p1">margin: 0;</p>
+<p class="p1">font-family: 'Roboto', sans-serif;</p>
+<p class="p1">background: #fff5f7;</p>
+<p class="p1">color: #333;</p>
+<p class="p1">text-align: center;</p>
+<p class="p1">overflow-x: hidden;</p>
+<p class="p1">}</p>
+<p class="p1">html {</p>
+<p class="p1">scroll-behavior: smooth;</p>
+<p class="p1">}</p>
+<p class="p1">/* Cover Video */</p>
+<p class="p1">video.cover {</p>
+<p class="p1">width: 100%;</p>
+<p class="p1">height: 100vh;</p>
+<p class="p1">object-fit: cover;</p>
+<p class="p1">position: fixed;</p>
+<p class="p1">top: 0;</p>
+<p class="p1">left: 0;</p>
+<p class="p1">z-index: 0;</p>
+<p class="p1">}</p>
+<p class="p1">.overlay {</p>
+<p class="p1">position: fixed;</p>
+<p class="p1">top:0;</p>
+<p class="p1">left:0;</p>
+<p class="p1">width:100%;</p>
+<p class="p1">height:100%;</p>
+<p class="p1">background: rgba(0,0,0,0.35);</p>
+<p class="p1">z-index:1;</p>
+<p class="p1">display:flex;</p>
+<p class="p1">justify-content:center;</p>
+<p class="p1">align-items:center;</p>
+<p class="p1">flex-direction:column;</p>
+<p class="p1">}<span class="s1"></span>/* Header */</p>
+<p class="p1">h1 {</p>
+<p class="p1">font-family: 'Great Vibes', cursive;</p>
+<p class="p1">font-size: 4em;</p>
+<p class="p1">color: white;</p>
+<p class="p1">margin: 0;</p>
+<p class="p1">}</p>
+<p class="p1">/* Navbar */</p>
+<p class="p1">nav {</p>
+<p class="p1">position: fixed;</p>
+<p class="p1">top: 10px;</p>
+<p class="p1">left: 50%;</p>
+<p class="p1">transform: translateX(-50%);</p>
+<p class="p1">z-index: 10;</p>
+<p class="p1">background: rgba(255,255,255,0.2);</p>
+<p class="p1">padding: 10px 20px;</p>
+<p class="p1">border-radius: 20px;</p>
+<p class="p1">}</p>
+<p class="p1">nav button {</p>
+<p class="p1">padding: 10px 20px;</p>
+<p class="p1">margin: 5px;</p>
+<p class="p1">border: none;</p>
+<p class="p1">border-radius: 20px;</p>
+<p class="p1">background: rgba(255, 120, 143, 0.8);</p>
+<p class="p1">color: white;</p>
+<p class="p1">cursor: pointer;</p>
+<p class="p1">font-size: 16px;</p>
+<p class="p1">transition: 0.3s;</p>
+<p class="p1">}</p>
+<p class="p1">nav button:hover {</p>
+<p class="p1">background: rgba(255, 80, 120, 0.9);</p>
+<p class="p1">}</p>
+<p class="p1">/* Sections */</p>
+<p class="p1">.section {</p>
+<p class="p1">display: none;</p>
+<p class="p1">padding: 60px 20px;</p>
+<p class="p1">max-width: 800px;</p>
+<p class="p1">margin: auto;</p>
+<p class="p1">position: relative;</p>
+<p class="p1">z-index: 2;</p>
+<p class="p1">}</p>
+<p class="p1">.active {</p>
+<p class="p1">display: block;</p>
+<p class="p1">}</p>
+<p class="p1">img {</p>
+<p class="p1">width: 250px;</p>
+<p class="p1">max-width: 90%;</p>
+<p class="p1">border-radius: 15px;<span class="s1"></span>margin: 10px;</p>
+<p class="p1">}</p>
+<p class="p1">.gallery {</p>
+<p class="p1">display: flex;</p>
+<p class="p1">flex-wrap: wrap;</p>
+<p class="p1">justify-content: center;</p>
+<p class="p1">}</p>
+<p class="p1">.gallery img {</p>
+<p class="p1">width: 30%;</p>
+<p class="p1">max-width: 150px;</p>
+<p class="p1">margin: 5px;</p>
+<p class="p1">border-radius: 10px;</p>
+<p class="p1">}</p>
+<p class="p1">button.miss-me, button.overthinking {</p>
+<p class="p1">padding: 12px 25px;</p>
+<p class="p1">background: #ff758f;</p>
+<p class="p1">color: white;</p>
+<p class="p1">border: none;</p>
+<p class="p1">border-radius: 25px;</p>
+<p class="p1">cursor: pointer;</p>
+<p class="p1">margin-top: 20px;</p>
+<p class="p1">font-size: 16px;</p>
+<p class="p1">}</p>
+<p class="p1">/* Falling Hearts */</p>
+<p class="p1">.heart {</p>
+<p class="p1">width: 12px;</p>
+<p class="p1">height: 12px;</p>
+<p class="p1">position: fixed;</p>
+<p class="p1">background: rgba(255, 120, 143, 0.6);</p>
+<p class="p1">transform: rotate(45deg);</p>
+<p class="p1">z-index: 1;</p>
+<p class="p1">pointer-events: none;</p>
+<p class="p1">border-radius: 2px;</p>
+<p class="p1">}</p>
+<p class="p1">.heart::before, .heart::after {</p>
+<p class="p1">content:'';</p>
+<p class="p1">width: 12px;</p>
+<p class="p1">height: 12px;</p>
+<p class="p1">position: absolute;</p>
+<p class="p1">background: rgba(255, 120, 143, 0.6);</p>
+<p class="p1">border-radius: 50%;</p>
+<p class="p1">}</p>
+<p class="p1">.heart::before { top: -6px; left: 0; }</p>
+<p class="p1">.heart::after { left: 6px; top: 0; }</p>
+<p class="p1">@keyframes fall {</p>
+<p class="p1">0% {transform: translateY(0) rotate(45deg); opacity:1;}</p>
+<p class="p1">100% {transform: translateY(100vh) rotate(45deg); opacity:0;}<span class="s1"></span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">function showSection(id){</p>
+<p class="p1">document.querySelectorAll(".section").forEach(s =&gt;</p>
+<p class="p1">s.classList.remove("active"));</p>
+<p class="p1">document.getElementById(id).classList.add("active");</p>
+<p class="p1">}</p>
+<p class="p1">// "Miss Me" button</p>
+<p class="p1">function missMe(){</p>
+<p class="p1">alert("I miss you too, mere Jaan! <span class="s2">💖 </span>Always thinking of you!");</p>
+<p class="p1">}</p>
+<p class="p1">// Overthinking reassurance</p>
+<p class="p1">function calmDown(){</p>
+<p class="p1">alert("Rakshu calm down baba \nNothing has changed and nothing</p>
+<p class="p1">will ever change! I still love you. I still choose you.\nPlease</p>
+<p class="p1">Smile, your smile is my favourite thing <span class="s2">💗 </span>");</p>
+<p class="p1">}</p>
+<p class="p1">// Continuous falling hearts</p>
+<p class="p1">function createHearts() {</p>
+<p class="p1">setInterval(() =&gt; {</p>
+<p class="p1">let heart = document.createElement('div');</p>
+<p class="p1">heart.className = 'heart';</p>
+<p class="p1">heart.style.left = Math.random() * 100 + 'vw';</p>
+<p class="p1">heart.style.animation = `fall ${5 + Math.random() * 5}s linear</p>
+<p class="p1">0s forwards`;</p>
+<p class="p1">document.body.appendChild(heart);</p>
+<p class="p1">setTimeout(() =&gt; heart.remove(), 10000);</p>
+<p class="p1">}, 300);</p>
+<p class="p1">}</p>
+<p class="p1">window.onload = function() {</p>
+<p class="p1">createHearts();</p>
+<p class="p1">showSection('love'); // Show first section by default</p>
+<p class="p1">};</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;!-- Cover Video --&gt;</p>
+<p class="p1">&lt;video class="cover" autoplay muted loop&gt;</p>
+<p class="p1">&lt;source src="background.mp4" type="video/mp4"&gt;</p>
+<p class="p1">Your browser does not support the video tag.</p>
+<p class="p1">&lt;/video&gt;</p>
+<p class="p1">&lt;!-- Overlay with header and navbar --&gt;</p>
+<p class="p1">&lt;div class="overlay"&gt;</p>
+<p class="p1">&lt;h1&gt;Aahana &amp; Rajyavradhan&lt;/h1&gt;<span class="s1"></span>&lt;nav&gt;</p>
+<p class="p1">&lt;button onclick="showSection('love')"&gt;Reasons I Love You&lt;/</p>
+<p class="p1">button&gt;</p>
+<p class="p1">&lt;button onclick="showSection('photos')"&gt;Photos&lt;/button&gt;</p>
+<p class="p1">&lt;button onclick="showSection('loveletter')"&gt;Love Letter&lt;/button&gt;</p>
+<p class="p1">&lt;button onclick="showSection('music')"&gt;Playlist&lt;/button&gt;</p>
+<p class="p1">&lt;button onclick="calmDown()"&gt;If You're Overthinking&lt;/button&gt;</p>
+<p class="p1">&lt;/nav&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;!-- Sections --&gt;</p>
+<p class="p1">&lt;div id="love" class="section"&gt;</p>
+<p class="p1">&lt;h2&gt;Reasons I Love You&lt;/h2&gt;</p>
+<p class="p1">&lt;p&gt;</p>
+<p class="p1">The way you giggle when I tickle you <span class="s2">🌸 </span>&lt;br&gt;</p>
+<p class="p1">The way you care for me <span class="s2">🥰 </span>&lt;br&gt;</p>
+<p class="p1">The way you make small moments special <span class="s2">✨ </span>&lt;br&gt;</p>
+<p class="p1">The way you hold me tight <span class="s2">🤍 </span>&lt;br&gt;</p>
+<p class="p1">The way you always support me <span class="s2">💖</span></p>
+<p class="p1">&lt;/p&gt;</p>
+<p class="p1">&lt;button class="miss-me" onclick="missMe()"&gt;Press when you miss me <span class="s2">💌 </span>&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div id="photos" class="section"&gt;</p>
+<p class="p1">&lt;h2&gt;Our Memories&lt;/h2&gt;</p>
+<p class="p1">&lt;div class="gallery"&gt;</p>
+<p class="p1">&lt;img src="IMG_8002.jpg" alt="Memory 1"&gt;</p>
+<p class="p1">&lt;img src="IMG_9851.jpg" alt="Memory 2"&gt;</p>
+<p class="p1">&lt;img src="IMG_8863.jpg" alt="Memory 3"&gt;</p>
+<p class="p1">&lt;img src="349DF475-D280-47C7-959E-EC006CA1C2C3.jpg" alt="Memory</p>
+<p class="p1">4"&gt;</p>
+<p class="p1">&lt;img src="096061DE-1004-41AE-BB85-897A8B27D245.jpg" alt="Memory</p>
+<p class="p1">5"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div id="loveletter" class="section"&gt;</p>
+<p class="p1">&lt;h2&gt;My Love Letter&lt;/h2&gt;</p>
+<p class="p1">&lt;p&gt;</p>
+<p class="p1">Dear Rakshu baba ,&lt;br&gt;&lt;br&gt;</p>
+<p class="p1">Just a little warning baba: I’ll always be here</p>
+<p class="p1">No matter where you go, I’ll somehow find you and tickle you</p>
+<p class="p1">like crazy hihihihihi!</p>
+<p class="p1">Former yours, because running from me is impossible &lt;br&gt;&lt;br&gt;</p>
+<p class="p1">Love, Aanzu <span class="s2">💖</span></p>
+<p class="p1">&lt;/p&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;div id="music" class="section"&gt;</p>
+<p class="p1">&lt;h2&gt;R&amp;A Mix&lt;/h2&gt;</p>
+<p class="p1">&lt;iframe allow="autoplay *; encrypted-media *;" frameborder="0"</p>
+<p class="p1">height="450" style="width:100%;max-</p>
+<p class="p1">width:660px;overflow:hidden;background:transparent;" sandbox="allow-</p>
+<p class="p1">forms allow-popups allow-same-origin allow-scripts allow-top-</p>
+<p class="p1">navigation-by-user-activation" src="https://embed.music.apple.com/</p>
+<p class="p1">us/playlist/YOUR_PLAYLIST_ID_HERE"&gt;&lt;/iframe&gt;<span class="s1"></span>&lt;iframe allow="autoplay *; encrypted-media *;" frameborder="0"</p>
+<p class="p1">height="450" style="width:100%;max-</p>
+<p class="p1">width:660px;overflow:hidden;background:transparent;" sandbox="allow-</p>
+<p class="p1">forms allow-popups allow-same-origin allow-scripts allow-top-</p>
+<p class="p1">navigation-by-user-activation" src="https://embed.music.apple.com/</p>
+<p class="p1">us/playlist/YOUR_PLAYLIST_ID_HERE"&gt;&lt;/iframe&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
